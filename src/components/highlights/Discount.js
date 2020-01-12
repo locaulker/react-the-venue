@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
+import MyButton from '../utils/MyButton'
 
 class Discount extends Component {
 
@@ -41,7 +42,14 @@ class Discount extends Component {
             <div className="discount_description">
               <h3>Get Tickets <small><em>by <strong>June 20th, 2020</strong></em></small></h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nostrum perspiciatis, inventore officiis laboriosam unde nesciunt distinctio earum consectetur excepturi accusamus numquam odit sint minima repellendus sit omnis neque vero.</p>
-              <button>Purchase Now</button>
+
+              <MyButton
+                text="Purchase Tickets"
+                bck="#ffa800"
+                color="#fff"
+                link="https://google.com"
+              />
+
             </div>
           </Slide>
 
