@@ -3,7 +3,9 @@
     "app",
     "ariana",
     "bar",
-    "cornflowerblue"
+    "cornflowerblue",
+    "info",
+    "venu"
   ],
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
