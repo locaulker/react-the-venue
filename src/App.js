@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import "./resources/styles.scss"
+import { Element } from 'react-scroll'
+
 import Header from "./components/header/Header"
 import Hero from "./components/hero/Hero"
 import VenuInfo from "./components/venue-info/VenuInfo"
@@ -16,11 +18,25 @@ class App extends Component {
 				style={{ height: "150rem", backgroundColor: "$mainWhite" }}
 			>
 				<Header />
-				<Hero />
-				<VenuInfo />
-				<HighLights />
-				<Princing />
-				<Location />
+				<Element name="hero">
+					<Hero />
+				</Element>
+
+				<Element name="venuinfo">
+					<VenuInfo />
+				</Element>
+
+				<Element name="highlights">
+					<HighLights />
+				</Element>
+
+				<Element name="pricing">
+					<Princing />
+				</Element>
+
+				<Element name="location">
+					<Location />
+				</Element>
 				<Footer />
 			</div>
 		)
